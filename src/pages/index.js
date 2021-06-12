@@ -22,94 +22,29 @@ const img = {
 
 const imgBorderRadius = {
   ...img,
-  borderRadius: '50%'
+  borderRadius: '50%',
+  maxWidth : '400px',
 }
 
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
-
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
+const root = {
+  fontFamily: 'Futura'
 }
 
 const backgroundColor = {
-  backgroundColor : '#90e0ef'
+  // backgroundColor : '#90e0ef'
+  fontFamily: 'arial'
 }
 
 
 const centeredItems = {
+  ...root,
   textAlign: 'center',
 }
 
 const headline = {
   textAlign: 'center',
   fontWeight: 300,
-  fontSize: 24,
+  fontSize: 82,
 }
 
 // markup
@@ -131,34 +66,45 @@ const IndexPage = () => {
       <title>Pandora Festival</title>
 
       <Grid item xs={12} style={centeredItems}>
-        <img src={kopf} alt="Logo" style={img} />
+        <h1 style={headline}>Pandora</h1>
+        {/* <img src={kopf} alt="Logo" style={img} /> */}
       </Grid>
 
-      {/* <Grid item xs={3} style={centeredItems}/>
-      <Grid item xs={6} style={centeredItems}>
-          <img src={thumpnail} alt="Logo" style={imgBorderRadius} />
-        </Grid>
-      <Grid item xs={3}/>
-       
-        */}
-
-      <Grid item xs={6} style={centeredItems}>
-        <h1>Packliste</h1>
-        <img src={thumpnail} alt="Logo" style={imgBorderRadius} />
-      </Grid>
-      <Grid item xs={6} style={centeredItems}>
-        <h1>Anfahrt</h1>
+      <Grid item xs={12} style={centeredItems}>
+        <p> ღ꧁ღ╭⊱ꕥ wir freuen uns auf euch ꕥ⊱╮ღ꧂ღ </p>
         <img src={thumpnail} alt="Logo" style={imgBorderRadius} onClick={() => handleOpen()}/>
       </Grid>
 
-      <Grid item xs={6} style={centeredItems}>
-        <h1>FAQ</h1>
-        <img src={thumpnail} alt="Logo" style={imgBorderRadius} />
-        </Grid>
-      <Grid item xs={6} style={centeredItems}>
-        <h1>Pioniere</h1>
-        <img src={thumpnail} alt="Logo" style={imgBorderRadius} />
+      <Grid item xs={12} style={centeredItems}>
+        <p style={root}>☼ Frequently asked questions</p>
       </Grid>
+
+
+      <Grid item xs={6} style={centeredItems}>
+       
+      </Grid>
+      <Grid item xs={6} style={centeredItems}>
+        <p style={root}>
+            ☼<br/>
+         Location<br/>
+           und  <br/>  
+         Anfahrt 
+        </p>
+      </Grid>
+      
+      <Grid item xs={8} style={centeredItems}/>
+      <Grid item xs={4} style={centeredItems}>
+        <p> ☼<br/>Fahr<br/>gemein<br/>schaf<br/>ten
+        </p>
+      </Grid>
+
+      <Grid item xs={2} style={centeredItems}/>
+      <Grid item xs={8} style={centeredItems}>
+        <p style={root}> ☼<br/>Dinge auf unserer To-Do-Liste
+        </p>
+      </Grid>
+      <Grid item xs={3} style={centeredItems}/>
+
       <Modal
         open={open}
         onClose={handleClose}
