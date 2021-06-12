@@ -27,7 +27,8 @@ const imgBorderRadius = {
 }
 
 const root = {
-  fontFamily: 'Futura'
+  fontFamily: 'Chalkduster',
+  fontSize : 24
 }
 
 const backgroundColor = {
@@ -79,11 +80,10 @@ const IndexPage = () => {
         <p style={root}>☼ Frequently asked questions</p>
       </Grid>
 
-
-      <Grid item xs={6} style={centeredItems}>
-       
+      <Grid item xs={1} style={centeredItems}/>
+      <Grid item xs={5} style={centeredItems}>
       </Grid>
-      <Grid item xs={6} style={centeredItems}>
+      <Grid item xs={5} style={centeredItems}>
         <p style={root}>
             ☼<br/>
          Location<br/>
@@ -91,19 +91,22 @@ const IndexPage = () => {
          Anfahrt 
         </p>
       </Grid>
+      <Grid item xs={1} style={centeredItems}/>
       
-      <Grid item xs={8} style={centeredItems}/>
-      <Grid item xs={4} style={centeredItems}>
+  
+      <Grid item xs={5} style={centeredItems}/>
+      <Grid item xs={3} style={centeredItems}>
         <p> ☼<br/>Fahr<br/>gemein<br/>schaf<br/>ten
         </p>
       </Grid>
+      <Grid item xs={4} style={centeredItems}/>
 
       <Grid item xs={2} style={centeredItems}/>
-      <Grid item xs={8} style={centeredItems}>
+      <Grid item xs={4} style={centeredItems}>
         <p style={root}> ☼<br/>Dinge auf unserer To-Do-Liste
         </p>
       </Grid>
-      <Grid item xs={3} style={centeredItems}/>
+      <Grid item xs={6} style={centeredItems}/>
 
       <Modal
         open={open}
@@ -123,13 +126,11 @@ const IndexPage = () => {
 
 const modalStyle = {
   position: 'absolute',
-  width: 400,
+  display: 'flex',
+  flexDirection : 'row',
+  margin : 'auto',
   backgroundColor: '#023e8a',
   opacity: 0.8,
-  top: '40%',
-  left: '50%',
-  marginTop: '-50px',
-  marginLeft: '-50px'
 }
 
 const body = (
