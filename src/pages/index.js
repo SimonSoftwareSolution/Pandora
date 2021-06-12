@@ -1,10 +1,9 @@
 import * as React from "react"
 import Grid from '@material-ui/core/Grid';
 import Modal from '@material-ui/core/Modal';
+import { makeStyles } from '@material-ui/core/styles';
 
 import thumpnail from './../images/thumbnail.jpg'
-import kopf from './../images/kopf.jpg'
-
 
 // styles
 const pageStyles = {
@@ -13,6 +12,23 @@ const pageStyles = {
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
   backgroundColor : '9bf6ff'
 }
+
+function getModalStyle() {
+  const top = 50
+  const left = 50
+
+  return {
+    top: `${top}%`,
+    left: `${left}%`,
+    transform: `translate(-${top}%, -${left}%)`,
+    position: 'absolute',
+    width: 400,
+    backgroundColor : '#FFFFFF',
+    border: '2px solid #000',
+    padding: (2, 4, 3),
+  };
+}
+
 
 const img = {
   maxWidth: "60%",
@@ -28,7 +44,7 @@ const imgBorderRadius = {
 
 const root = {
   fontFamily: 'Chalkduster',
-  fontSize : 24
+  fontSize : 30
 }
 
 const backgroundColor = {
@@ -50,7 +66,20 @@ const headline = {
 
 // markup
 const IndexPage = () => {
+    const [modalStyle] = React.useState(getModalStyle);
     const [open, setOpen] = React.useState(false);
+
+    const body = (
+      <Grid container spacing={3} style={modalStyle}>
+        <Grid item xs={12}>
+          <h1>Hey Festivalbesucher</h1>
+          <p>
+            Schön bla bla bla bla
+          </p>
+        </Grid>
+    
+      </Grid>
+    );
 
     const handleOpen = () => {
     setOpen(true);
@@ -62,7 +91,7 @@ const IndexPage = () => {
 
   return (
    
-     
+
       <Grid container spacing={3} style={backgroundColor}>
       <title>Pandora Festival</title>
 
@@ -76,7 +105,7 @@ const IndexPage = () => {
         <img src={thumpnail} alt="Logo" style={imgBorderRadius} onClick={() => handleOpen()}/>
       </Grid>
 
-      <Grid item xs={12} style={centeredItems}>
+      <Grid item xs={12} style={centeredItems} onClick={() => handleOpen()}>
         <p style={root}>☼ Frequently asked questions</p>
       </Grid>
 
@@ -123,26 +152,5 @@ const IndexPage = () => {
 
   )
 }
-
-const modalStyle = {
-  position: 'absolute',
-  display: 'flex',
-  flexDirection : 'row',
-  margin : 'auto',
-  backgroundColor: '#023e8a',
-  opacity: 0.8,
-}
-
-const body = (
-  <Grid container spacing={3} style={modalStyle}>
-    <Grid item xs={12}>
-      <h1>Hey Festivalbesucher</h1>
-      <p>
-        Schön bla bla bla bla
-      </p>
-    </Grid>
-
-  </Grid>
-);
 
 export default IndexPage
