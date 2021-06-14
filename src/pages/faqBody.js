@@ -1,29 +1,14 @@
 import * as React from "react"
 import Grid from '@material-ui/core/Grid';
-import {faqStyle} from '../styles/styles';
+import {faqStyle, backgroundColor, centeredItems} from '../styles/styles';
 
-function getModalStyle() {
-    const top = 50
-    const left = 50
-  
-    return {
-      top: `${top}%`,
-      left: `${left}%`,
-      transform: `translate(-${top}%, -${left}%)`,
-      position: 'absolute',
-      width: 1200,
-      backgroundColor : '#FFFFFF',
-      border: '2px solid #000',
-      padding: (2, 4, 3),
-    };
-  }
-  
 
 const FaqBody = () => {
     return(
-    <Grid container spacing={3} style={getModalStyle()}>
-      <Grid item xs={12}>
-        <h1>Hey Festivalbesucher</h1>
+    <Grid container spacing={3} style={backgroundColor}>
+
+        <Grid item xs={3} style={centeredItems}/>
+        <Grid item xs={6}>
         <p style={faqStyle}>
         ☼ Frequently asked Questions<br/>
 
@@ -50,7 +35,7 @@ const FaqBody = () => {
 
         </p>
       </Grid>
-  
+      <Grid item xs={3} style={centeredItems}/>
     </Grid>
     )}
 

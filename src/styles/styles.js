@@ -30,9 +30,11 @@ const pageStyles = {
   }
   
   const faqStyle = {
-    ...root,
+    ...centeredItems,
     maxWidth : '1200px',
-    fontSize : 20
+    fontSize : 20,
+    marginTop : '200px',  
+    backgroundColor : '#FFFFFF',
   }
   
   

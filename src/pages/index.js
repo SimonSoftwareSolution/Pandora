@@ -79,16 +79,12 @@ const IndexPage = () => {
       <Modal
         open={faqOpen}
         onClose={handlefaqClose}
-        aria-labelledby="simple-modal-title"
-        aria-describedby="simple-modal-description"
       >
         <FaqBody/>
       </Modal>  
       <Modal
         open={anfahrtOpen}
         onClose={handleAnfahrtClose}
-        aria-labelledby="simple-modal-title"
-        aria-describedby="simple-modal-description"
       >
         <AnfahrtBody/>
       </Modal>
