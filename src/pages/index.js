@@ -7,6 +7,7 @@ import WebFont from 'webfontloader';
 import {backgroundColor, headline, centeredItems, root, imgBorderRadius} from '../styles/styles';
 import FaqBody from './faqBody';
 import AnfahrtBody from './anfahrtBody';
+import PacklisteBody from './packlisteBody';
 
 import thumpnail from './../images/thumbnail.jpg'
 
@@ -16,6 +17,7 @@ import thumpnail from './../images/thumbnail.jpg'
 const IndexPage = () => {
     const [faqOpen, setFAQOpen] = React.useState(false);
     const [anfahrtOpen, setAnfahrtOpen] = React.useState(false);
+    const [packlisteOpen, setPacklisteOpen] = React.useState(false);
     
     React.useEffect(() => {
       WebFont.load({
@@ -37,6 +39,13 @@ const IndexPage = () => {
     };
     const handleAnfahrtClose = () => {
       setAnfahrtOpen(false);
+    };
+
+    const handlePacklisteOpen = () => {
+      setPacklisteOpen(true);
+    };
+    const handlePacklisteClose = () => {
+      setPacklisteOpen(false);
     };
 
   return (
@@ -72,13 +81,23 @@ const IndexPage = () => {
       </Grid>
       <Grid item xs={1} style={centeredItems}/>
       
+      <Grid item xs={2} style={centeredItems}/>
+      <Grid item xs={4} style={centeredItems} onClick={() => handlePacklisteOpen()}>
+        <p style={root}> ☼<br/>Packliste
+        </p>
+      </Grid>
+      <Grid item xs={6} style={centeredItems}/>
   
       <Grid item xs={5} style={centeredItems}/>
       <Grid item xs={3} style={centeredItems}>
+        <a href='https://docs.google.com/spreadsheets/d/1Mhqwb4y6DHsK6bwsYZF0l2rPQ-wbOZMow2vKAd4jLdk/edit#gid=0'>
+        
         <p> ☼<br/>Fahr<br/>gemein<br/>schaf<br/>ten
         </p>
+        </a>
       </Grid>
       <Grid item xs={4} style={centeredItems}/>
+
 
       <Grid item xs={2} style={centeredItems}/>
       <Grid item xs={4} style={centeredItems}>
@@ -98,6 +117,12 @@ const IndexPage = () => {
         onClose={() => handleAnfahrtClose()}
       >
         <AnfahrtBody handleClose={() => handleAnfahrtClose()}/>
+      </Modal>
+      <Modal
+        open={packlisteOpen}
+        onClose={() => handlePacklisteClose()}
+      >
+        <PacklisteBody handleClose={() => handlePacklisteClose()}/>
       </Modal>
 
 

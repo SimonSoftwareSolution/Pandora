@@ -60,6 +60,19 @@ const FaqBody = (props) => {
         Noch Fragen offen? Dann nichts wie raus damit :-)  
         <br/>
         <br/>
+        ☼
+        <br/>
+        <br/>
+        ☼
+        <br/>
+        <br/>
+        
+        ☼
+        <br/>
+        <br/>
+        ☼
+        <br/>
+        <br/>
         </p>
       </Grid>
       <Grid item xs={1} style={centeredItems}/>
