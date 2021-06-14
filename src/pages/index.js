@@ -19,13 +19,13 @@ const IndexPage = () => {
     const [anfahrtOpen, setAnfahrtOpen] = React.useState(false);
     const [packlisteOpen, setPacklisteOpen] = React.useState(false);
     
-    // React.useEffect(() => {
-    //   WebFont.load({
-    //     google: {
-    //       families: ['Droid Sans', 'Chilanka']
-    //     }
-    //   });
-    //  }, []);
+    React.useEffect(() => {
+      WebFont.load({
+        google: {
+          families: ['Droid Sans', 'Chilanka']
+        }
+      });
+     }, []);
 
     const handlefaqOpen = () => {
       setFAQOpen(true);
