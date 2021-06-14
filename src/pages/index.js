@@ -101,8 +101,10 @@ const IndexPage = () => {
 
       <Grid item xs={2} style={centeredItems}/>
       <Grid item xs={4} style={centeredItems}>
+      <a href='https://docs.google.com/document/d/1pdZfFrwHlEY0HFjXXH4PhQ9YgXc3aXsJXJixdqID6s0/edit?usp=sharing'> 
         <p style={root}> ☼<br/>Dinge auf unserer To-Do-Liste
         </p>
+      </a>
       </Grid>
       <Grid item xs={6} style={centeredItems}/>
 
