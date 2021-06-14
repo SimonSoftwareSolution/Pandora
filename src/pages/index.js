@@ -1,6 +1,9 @@
 import * as React from "react"
 import Grid from '@material-ui/core/Grid';
 import Modal from '@material-ui/core/Modal';
+
+import WebFont from 'webfontloader';
+
 import {backgroundColor, headline, centeredItems, root, imgBorderRadius} from '../styles/styles';
 import FaqBody from './faqBody';
 import AnfahrtBody from './anfahrtBody';
@@ -13,6 +16,14 @@ import thumpnail from './../images/thumbnail.jpg'
 const IndexPage = () => {
     const [faqOpen, setFAQOpen] = React.useState(false);
     const [anfahrtOpen, setAnfahrtOpen] = React.useState(false);
+    
+    React.useEffect(() => {
+      WebFont.load({
+        google: {
+          families: ['Droid Sans', 'Chilanka']
+        }
+      });
+     }, []);
 
     const handlefaqOpen = () => {
       setFAQOpen(true);

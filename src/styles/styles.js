@@ -20,7 +20,7 @@ const pageStyles = {
   }
   
   const root = {
-    fontFamily: 'Chalkduster',
+    fontFamily: 'Chilanka',
     fontSize : 30
   }
   

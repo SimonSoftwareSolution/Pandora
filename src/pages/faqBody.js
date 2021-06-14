@@ -33,9 +33,31 @@ const FaqBody = (props) => {
         <br/>
         <br/>
         Wie kann ich euch unterstützen? <br/> <br/>
-        Gute Vibes und Liebe sind auf jeden Fall das Wichtigste. Wir hoffen alle, dass wir das Festival reibungslos über die Bühne bringen und gemeinsam eine wahnsinnig schöne Zeit erleben werden, die uns in Erinnerung bleibt und uns in so manchen Momenten der Zukunft ein warmes Lächeln schenkt. 
+        Gute Vibes und nur Liebe sind auf jeden Fall das Wichtigste. Wir hoffen alle, dass wir das Festival reibungslos über die Bühne bringen und gemeinsam eine wahnsinnig schöne Zeit erleben werden, die uns in Erinnerung bleibt und uns in so manchen Momenten der Zukunft ein warmes Lächeln schenkt. 
+        Wenn du auch selbst anpacken möchtest, dann komm zum Aufbau oder bastle uns was Schönes (es gibt eine Bastelgruppe auf WA!)
         <br/>
         <br/>
+        Auf einer Skala von 0 bis 10, wie cool wird Pandora? <br/>
+        <br/>
+        11 laut unserem jetzigen Bauchgefühl
+        <br/>
+        <br/>
+        Schietwedda?  <br/>
+        <br/>
+        Dann müssen wir wohl einen Regentanz aufführen, wir sind doch nicht aus Zucker! 
+        Gibt es Nachbarn? <br/>
+        <br/>
+        Ja, also bitte schön nett und freundlich sein, wir sind Gäste! Aber da machen wir uns in unserer Konstellation von Leuten keine Sorgen. Die Nachbarn sind informiert und hatten keine Einwände. Im Notfall müssten wir natürlich die Musik etwas drosseln. Das bringt uns zum nächsten Punkt:
+        <br/>
+        <br/>
+        Ordnungsamt, Gesundheitsamt und Polizei ? <br/>
+        <br/>
+        Wir haben mit den Ämtern gesprochen und ihr Einverständnis für unser Vorhaben. Die Polizei wird informiert sein, muss aber persönlich vorbeikommen, sollte sich jemand beschweren. Da wir aus unserer Sicht grünes Licht haben, gilt es freundlich zu sein, denn Ruhestörung ist eine Ermessensangelegenheit und das verbessert unsere Ausgangslage.
+        Ein ganz besonderes Dankeschön geht an Pauline, die sich so liebevoll und fürsorglich um unsere Rosa kümmert und an Heike, Rosa’s Oma, die sich in der Nähe einquartiert, um sich um die kleine zu kümmern!
+        Ohne diesen Einsatz, wäre Pandora undenkbar gewesen.
+        <br/>
+        <br/>
+        Noch Fragen offen? Dann nichts wie raus damit :-)  
         <br/>
         <br/>
         </p>
