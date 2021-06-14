@@ -6,10 +6,13 @@ import {faqStyle, backgroundColor, centeredItems} from '../styles/styles';
 const PacklisteBody = (props) => {
     return(
     <Grid container spacing={3} style={backgroundColor}>
-
+        <Grid item xs={12} style={centeredItems} />
         <Grid item xs={1} style={centeredItems} />
         <Grid item xs={10} onClick={() => props.handleClose()}>
         <p style={faqStyle}>
+        <br/>
+        <br/>
+        <br/>
         1. Zelt, Schlafsack, Isomatte (Wäre superklassetoll, wenn man sich zelte teit oder sie nicht riesig sind Platz wollen wir zum Tanzen und weniger zum Campen nutzen) <br/> 
         2. SCHNELLTESTERGEBNIS und IMPFPASS+Kopie  für Geimpfte <br/>
         3.Picknickdecken tücher o.ä <br/>
