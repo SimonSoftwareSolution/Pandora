@@ -36,7 +36,7 @@ const pageStyles = {
   
   const faqStyle = {
     ...centeredItems,
-    fontSize : 14,
+    fontSize : 16,
     marginTop : '100px',
     marginBottom : '300px',
     maxWidth : '800px',  

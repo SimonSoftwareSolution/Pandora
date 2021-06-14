@@ -3,11 +3,11 @@ import Grid from '@material-ui/core/Grid';
 import anfahrt from './../images/anfahrt.png'
 import {faqStyle, backgroundColor, centeredItems, modalImage} from '../styles/styles';
 
-  const AnfahrtBody = () => {
+  const AnfahrtBody = (props) => {
       return(
     <Grid container spacing={3} style={backgroundColor}>
         <Grid item xs={1} style={centeredItems}/>
-      <Grid item xs={10} style={faqStyle}>
+      <Grid item xs={10} style={faqStyle} onClick={() => props.handleClose()}>
         <img src={anfahrt} alt="Logo" style={modalImage} />
       </Grid>
       <Grid item xs={1} style={centeredItems}/>

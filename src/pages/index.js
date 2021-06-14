@@ -84,9 +84,9 @@ const IndexPage = () => {
       </Modal>  
       <Modal
         open={anfahrtOpen}
-        onClose={handleAnfahrtClose}
+        onClose={() => handleAnfahrtClose()}
       >
-        <AnfahrtBody/>
+        <AnfahrtBody handleClose={() => handleAnfahrtClose()}/>
       </Modal>
 
 
