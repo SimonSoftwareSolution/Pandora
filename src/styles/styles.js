@@ -38,7 +38,7 @@ const pageStyles = {
     ...centeredItems,
     fontSize : 14,
     marginTop : '100px',
-    marginBottom : '100px',
+    marginBottom : '300px',
     maxWidth : '800px',  
     backgroundColor : '#FFFFFF',
     height: '100%',

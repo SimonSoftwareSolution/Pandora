@@ -80,7 +80,7 @@ const IndexPage = () => {
         open={faqOpen}
         onClose={handlefaqClose}
       >
-        <FaqBody/>
+        <FaqBody handleClose={() => handlefaqClose()}/>
       </Modal>  
       <Modal
         open={anfahrtOpen}

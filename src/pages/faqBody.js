@@ -3,12 +3,12 @@ import Grid from '@material-ui/core/Grid';
 import {faqStyle, backgroundColor, centeredItems} from '../styles/styles';
 
 
-const FaqBody = () => {
+const FaqBody = (props) => {
     return(
     <Grid container spacing={3} style={backgroundColor}>
 
-        <Grid item xs={1} style={centeredItems}/>
-        <Grid item xs={10}>
+        <Grid item xs={1} style={centeredItems} />
+        <Grid item xs={10} onClick={() => props.handleClose()}>
         <p style={faqStyle}>
         ☼ Frequently asked Questions<br/>
         <br/>
