@@ -28,6 +28,11 @@ const pageStyles = {
     // backgroundColor : '#90e0ef'
     fontFamily: 'arial'
   }
+
+  const centeredItems = {
+    ...root,
+    textAlign: 'center',
+  }
   
   const faqStyle = {
     ...centeredItems,
@@ -49,10 +54,7 @@ const pageStyles = {
   }
   
   
-  const centeredItems = {
-    ...root,
-    textAlign: 'center',
-  }
+  
   
   const headline = {
     textAlign: 'center',
