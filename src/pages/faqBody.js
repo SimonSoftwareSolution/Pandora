@@ -1,6 +1,6 @@
 import * as React from "react"
 import Grid from '@material-ui/core/Grid';
-import {faqStyle} from './styles';
+import {faqStyle} from '../styles/styles';
 
 function getModalStyle() {
     const top = 50

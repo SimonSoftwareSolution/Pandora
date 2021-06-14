@@ -1,7 +1,7 @@
 import * as React from "react"
 import Grid from '@material-ui/core/Grid';
 import Modal from '@material-ui/core/Modal';
-import {backgroundColor, headline, centeredItems, root, imgBorderRadius} from './styles';
+import {backgroundColor, headline, centeredItems, root, imgBorderRadius} from '../styles/styles';
 import FaqBody from './faqBody';
 import AnfahrtBody from './anfahrtBody';
 
