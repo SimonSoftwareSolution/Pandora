@@ -1,92 +1,31 @@
 import * as React from "react"
 import Grid from '@material-ui/core/Grid';
 import Modal from '@material-ui/core/Modal';
-import { makeStyles } from '@material-ui/core/styles';
+import {backgroundColor, headline, centeredItems, root, imgBorderRadius} from './styles';
+import FaqBody from './faqBody';
+import AnfahrtBody from './anfahrtBody';
 
 import thumpnail from './../images/thumbnail.jpg'
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  backgroundColor : '9bf6ff'
-}
 
-function getModalStyle() {
-  const top = 50
-  const left = 50
-
-  return {
-    top: `${top}%`,
-    left: `${left}%`,
-    transform: `translate(-${top}%, -${left}%)`,
-    position: 'absolute',
-    width: 400,
-    backgroundColor : '#FFFFFF',
-    border: '2px solid #000',
-    padding: (2, 4, 3),
-  };
-}
-
-
-const img = {
-  maxWidth: "60%",
-  height: "auto",
- 
-}
-
-const imgBorderRadius = {
-  ...img,
-  borderRadius: '50%',
-  maxWidth : '400px',
-}
-
-const root = {
-  fontFamily: 'Chalkduster',
-  fontSize : 30
-}
-
-const backgroundColor = {
-  // backgroundColor : '#90e0ef'
-  fontFamily: 'arial'
-}
-
-
-const centeredItems = {
-  ...root,
-  textAlign: 'center',
-}
-
-const headline = {
-  textAlign: 'center',
-  fontWeight: 300,
-  fontSize: 82,
-}
 
 // markup
 const IndexPage = () => {
-    const [modalStyle] = React.useState(getModalStyle);
-    const [open, setOpen] = React.useState(false);
+    const [faqOpen, setFAQOpen] = React.useState(false);
+    const [anfahrtOpen, setAnfahrtOpen] = React.useState(false);
 
-    const body = (
-      <Grid container spacing={3} style={modalStyle}>
-        <Grid item xs={12}>
-          <h1>Hey Festivalbesucher</h1>
-          <p>
-            Schön bla bla bla bla
-          </p>
-        </Grid>
-    
-      </Grid>
-    );
-
-    const handleOpen = () => {
-    setOpen(true);
+    const handlefaqOpen = () => {
+      setFAQOpen(true);
+    };
+    const handlefaqClose = () => {
+      setFAQOpen(false);
     };
 
-    const handleClose = () => {
-    setOpen(false);
+    const handleAnfahrtOpen = () => {
+      setAnfahrtOpen(true);
+    };
+    const handleAnfahrtClose = () => {
+      setAnfahrtOpen(false);
     };
 
   return (
@@ -102,17 +41,17 @@ const IndexPage = () => {
 
       <Grid item xs={12} style={centeredItems}>
         <p> ღ꧁ღ╭⊱ꕥ wir freuen uns auf euch ꕥ⊱╮ღ꧂ღ </p>
-        <img src={thumpnail} alt="Logo" style={imgBorderRadius} onClick={() => handleOpen()}/>
+        <img src={thumpnail} alt="Logo" style={imgBorderRadius}/>
       </Grid>
 
-      <Grid item xs={12} style={centeredItems} onClick={() => handleOpen()}>
+      <Grid item xs={12} style={centeredItems} onClick={() => handlefaqOpen()}>
         <p style={root}>☼ Frequently asked questions</p>
       </Grid>
 
       <Grid item xs={1} style={centeredItems}/>
       <Grid item xs={5} style={centeredItems}>
       </Grid>
-      <Grid item xs={5} style={centeredItems}>
+      <Grid item xs={5} style={centeredItems} onClick={() => handleAnfahrtOpen()}>
         <p style={root}>
             ☼<br/>
          Location<br/>
@@ -138,14 +77,21 @@ const IndexPage = () => {
       <Grid item xs={6} style={centeredItems}/>
 
       <Modal
-        open={open}
-        onClose={handleClose}
+        open={faqOpen}
+        onClose={handlefaqClose}
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
-        centered
       >
-        {body}
+        <FaqBody/>
       </Modal>  
+      <Modal
+        open={anfahrtOpen}
+        onClose={handleAnfahrtClose}
+        aria-labelledby="simple-modal-title"
+        aria-describedby="simple-modal-description"
+      >
+        <AnfahrtBody/>
+      </Modal>
 
 
       </Grid>
