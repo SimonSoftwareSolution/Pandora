@@ -32,10 +32,15 @@ const pageStyles = {
   const faqStyle = {
     ...centeredItems,
     fontSize : 14,
-    marginTop : '100px',  
+    marginTop : '100px',
+    marginBottom : '100px',
+    maxWidth : '800px',  
     backgroundColor : '#FFFFFF',
     height: 'auto',
-    width : 'auto'
+    width : 'auto',
+    maxHeight: '100vh',
+    overflowY: 'auto'
+
   }
 
   const modalImage = {

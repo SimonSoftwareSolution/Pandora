@@ -11,12 +11,14 @@ const FaqBody = () => {
         <Grid item xs={10}>
         <p style={faqStyle}>
         ☼ Frequently asked Questions<br/>
-
+        <br/>
+        <br/>
         Wer organisiert Pandora? <br/>
+        <br/>
         Hey, unser Kernorgateam besteht aus Hanna, Kamran, Hannes, Tabea, Moritz, Pauline, Raul und Rosa. Im Grunde waren wir eine Karlsruher Clique, bevor es uns in die weite Welt verstreute und wir freuen uns sehr, dass wir zur Vorbereitung für ein hoffentlich so schönes Erlebnis wieder zusammen kommen durften. Mit viel Durchhaltevermögen und Spaß, haben wir dem Abenteuer „Pandora“ seit einigen Monaten Leben eingehaucht.
         <br/>
         <br/>
-        Wie kommt ihr zu der Location? <br/>
+        Wie kommt ihr zu der Location? <br/> <br/>
         Das Grundstück gehört dem Bekannten unserer Eltern, leider schafft er es von seinem Wohnsitz im Süden Deutschlands zu selten so hoch in den Norden zu fahren. Deswegen hatte die Natur sich das Gelände beinahe schon zurückgeholt, bis wir diese Idylle wieder zugänglich machten. Um die dort sehr lebendige Wildnis zu schützen, bitten wir euch daher um ein paar Selbstverständlichkeiten: keinen Müll zu hinterlassen und besonders im Umgang mit Feuer Acht zu geben. 
         <br/>
         <br/>
@@ -26,13 +28,16 @@ const FaqBody = () => {
         Aber der Name ist in unserer Vorstellung eng an den bildgewaltigen Film „Avatar“ verknüpft und die wild-lebendige Natur des Grundstücks erinnert schlicht an den dort skizzierten Planeten Pandora. Thematisch nehmen wir hierauf Bezug. 
         <br/>
         <br/>
-        Was passiert mit meinem Kunstbeitrag? <br/>
+        Was passiert mit meinem Kunstbeitrag? <br/> <br/>
         Klar, der Löwenanteil (wenn es denn reicht?¿ 0.o ) wird benötigt, um das ganze Event überhaupt möglich zu machen. Wir haben Ausgaben für die Anlage, die Bastelei, die Biertischgarnituren, Wasser, Strom und bestimmt noch 100 Sachen mehr. Aber wenn was übrig bleiben sollte, wollen wir von euch, dass ihr entscheidet, ob das Geld gespendet werden soll - an eine Organisation eurer Wahl - oder ob wir den Überschuss bis zum nächsten Jahr verwahren sollen.
         <br/>
         <br/>
-        Wie kann ich euch unterstützen? <br/>
+        Wie kann ich euch unterstützen? <br/> <br/>
         Gute Vibes und Liebe sind auf jeden Fall das Wichtigste. Wir hoffen alle, dass wir das Festival reibungslos über die Bühne bringen und gemeinsam eine wahnsinnig schöne Zeit erleben werden, die uns in Erinnerung bleibt und uns in so manchen Momenten der Zukunft ein warmes Lächeln schenkt. 
-
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         </p>
       </Grid>
       <Grid item xs={1} style={centeredItems}/>
