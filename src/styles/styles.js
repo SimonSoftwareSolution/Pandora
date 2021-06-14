@@ -31,10 +31,16 @@ const pageStyles = {
   
   const faqStyle = {
     ...centeredItems,
-    maxWidth : '1200px',
-    fontSize : 20,
-    marginTop : '200px',  
+    fontSize : 14,
+    marginTop : '100px',  
     backgroundColor : '#FFFFFF',
+    height: 'auto',
+    width : 'auto'
+  }
+
+  const modalImage = {
+    maxWidth: '100%',
+    height: 'auto'
   }
   
   
@@ -49,4 +55,4 @@ const pageStyles = {
     fontSize: 82,
   }
 
-  export {pageStyles, img, root, backgroundColor, faqStyle, centeredItems, headline, imgBorderRadius}
+  export {pageStyles, img, root, backgroundColor, faqStyle, centeredItems, headline, imgBorderRadius, modalImage}

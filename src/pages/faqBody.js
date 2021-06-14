@@ -7,8 +7,8 @@ const FaqBody = () => {
     return(
     <Grid container spacing={3} style={backgroundColor}>
 
-        <Grid item xs={3} style={centeredItems}/>
-        <Grid item xs={6}>
+        <Grid item xs={1} style={centeredItems}/>
+        <Grid item xs={10}>
         <p style={faqStyle}>
         ☼ Frequently asked Questions<br/>
 
@@ -35,7 +35,7 @@ const FaqBody = () => {
 
         </p>
       </Grid>
-      <Grid item xs={3} style={centeredItems}/>
+      <Grid item xs={1} style={centeredItems}/>
     </Grid>
     )}
 
