@@ -36,8 +36,8 @@ const pageStyles = {
     marginBottom : '100px',
     maxWidth : '800px',  
     backgroundColor : '#FFFFFF',
-    height: 'auto',
-    width : 'auto',
+    height: '100%',
+    width : '100%',
     maxHeight: '100vh',
     overflowY: 'auto'
 
