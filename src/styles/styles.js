@@ -32,7 +32,7 @@ const pageStyles = {
   const faqStyle = {
     ...root,
     maxWidth : '1200px',
-    fontSize : 24
+    fontSize : 20
   }
   
   
