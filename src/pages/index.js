@@ -1,6 +1,7 @@
 import * as React from "react"
 import Grid from '@material-ui/core/Grid';
 import Modal from '@material-ui/core/Modal';
+import ImageGallery from 'react-image-gallery';
 
 import {backgroundColor, headline, centeredItems, root, imgBorderRadius} from '../styles/styles';
 import FaqBody from './faqBody';
@@ -9,6 +10,14 @@ import PacklisteBody from './packlisteBody';
 
 import thumpnail from './../images/thumbnail.jpg'
 
+const images = [
+  {
+    original : thumpnail
+  },
+  {
+    original : thumpnail
+  },
+]
 
 
 // markup
